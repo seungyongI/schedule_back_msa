@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a570a80e-0f2c-4a36-b127-b30dcae6c4c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/ingress/ingress-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/ingress/ingress-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/portNumber" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/portNumber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/auth.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/diary.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/exchangediary.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/file.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/friend.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/friend.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/image.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/kakaoLogin.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/login.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/schedule.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/search.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/statistics.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/calendarService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/friendService">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/userService">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2pKn6GgMub1cTLmQPGwFub7yf2A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "cew",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work/teamNJ_msa/k8s/services"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\teamNJ_msa\k8s\services" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a570a80e-0f2c-4a36-b127-b30dcae6c4c2" name="Changes" comment="" />
+      <created>1732523458763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732523458763</updated>
+    </task>
+    <servers />
+  </component>
+</project>

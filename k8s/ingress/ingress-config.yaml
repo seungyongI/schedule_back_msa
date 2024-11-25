@@ -6,89 +6,26 @@ spec:
   rules:
     - http:
         paths:
-          - path: /authService
+          - path: /calendarService
             pathType: Prefix
             backend:
               service:
-                name: authService
-                port:
-                  number: 70001
-          - path: /diaryService
-            pathType: Prefix
-            backend:
-              service:
-                name: diaryService
+                name: calendarService
                 port:
                   number: 70002
-          - path: /exchangeDiaryService
-            pathType: Prefix
-            backend:
-              service:
-                name: exchangeDiaryService
-                port:
-                  number: 70003
-          - path: /fileService
-            pathType: Prefix
-            backend:
-              service:
-                name: fileService
-                port:
-                  number: 70004
           - path: /friendService
             pathType: Prefix
             backend:
               service:
                 name: friendService
                 port:
-                  number: 70005
-          - path: /imageService
-            pathType: Prefix
-            backend:
-              service:
-                name: imageService
-                port:
-                  number: 70006
-          - path: /kakaoLoginService
-            pathType: Prefix
-            backend:
-              service:
-                name: kakaoLoginService
-                port:
-                  number: 70007
-          - path: /loginService
-            pathType: Prefix
-            backend:
-              service:
-                name: loginService
-                port:
-                  number: 70008
-          - path: /scheduleService
-            pathType: Prefix
-            backend:
-              service:
-                name: scheduleService
-                port:
-                  number: 70009
-          - path: /searchService
-            pathType: Prefix
-            backend:
-              service:
-                name: searchService
-                port:
-                  number: 70010
-          - path: /statisticsService
-            pathType: Prefix
-            backend:
-              service:
-                name: statisticsService
-                port:
-                  number: 70011
+                  number: 70003
           - path: /userService
             pathType: Prefix
             backend:
               service:
                 name: userService
                 port:
-                  number: 70012
+                  number: 70001
 
   ingressClassName: nginx

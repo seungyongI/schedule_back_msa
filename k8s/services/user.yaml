@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment # pod 여러개
+metadata:
+  name: user-service-deployment
+spec: # 어떻게 만들지에 대한 내용
+  replicas: 1 # pod 몇 개 만들래
+  selector:
+    matchLabels:
+      app: user-service # 쿠버네티스 안에서 변수명
+  template:
+    metadata:
+      labels:
+        app: user-service # 서비스에서 찾는 변수명
+    spec: # pod 하나하나에 대한 내용
+      containers:
+        - name: user-service
+          image: jeun0415/user-service:msa.k8.01 # dockerhub에 있는 image
+          ports:
+            - containerPort: 70001
+          env:
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: NJ-k8s-configmap
+                  key: spring-datasource-url
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: NJ-k8s-configmap
+                  key: spring-datasource-username
+            - name: SERVER_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: NJ-k8s-configmap
+                  key: user-service-port
+
+--- # 환경을 두 개 지정할 때 쓰는 구분자
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 70001
+      targetPort: 70001
+  selector:
+    app: user-service

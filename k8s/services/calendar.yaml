@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment # pod 여러개
 metadata:
-  name: friend-service-deployment
+  name: calendar-service-deployment
 spec: # 어떻게 만들지에 대한 내용
   replicas: 1 # pod 몇 개 만들래
   selector:
     matchLabels:
-      app: friend-service # 쿠버네티스 안에서 변수명
+      app: calendar-service # 쿠버네티스 안에서 변수명
   template:
     metadata:
       labels:
-        app: friend-service # 서비스에서 찾는 변수명
+        app: calendar-service # 서비스에서 찾는 변수명
     spec: # pod 하나하나에 대한 내용
       containers:
-        - name: friend-service
-          image: jeun0415/friend-service:msa.k8.01 # dockerhub에 있는 image
+        - name: calendar-service
+          image: jeun0415/calendar-service:msa.k8.01 # dockerhub에 있는 image
           ports:
-            - containerPort: 70003
+            - containerPort: 70002
           env:
             - name: SPRING_DATASOURCE_URL
               valueFrom:
@@ -32,17 +32,17 @@ spec: # 어떻게 만들지에 대한 내용
               valueFrom:
                 configMapKeyRef:
                   name: NJ-k8s-configmap
-                  key: friend-service-port
+                  key: calendar-service-port
 
 --- # 환경을 두 개 지정할 때 쓰는 구분자
 apiVersion: v1
 kind: Service
 metadata:
-  name: friend-service
+  name: calendar-service
 spec:
   type: LoadBalancer
   ports:
-    - port: 70003
-      targetPort: 70003
+    - port: 70002
+      targetPort: 70002
   selector:
-    app: friend-service
+    app: calendar-service

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: NJ-k8s-configmap
+data:
+  access_token_expiration_time: "86400" # 하루
+  refresh_token_expiration_time: "2592000" # 한 달
+  token_secret: "abcdefghijklmnopqrstuvwxyz01234567890"
+  bootstrap-servers: "172.30.1.58:9092"
+  user-service-port: "70001"
+  calendar-service-port: "70002"
+  friend-service-port: "70003"
+  spring-datasource-url: "jdbc:mariadb://mariadb:3306/newjeans?serverTimezone=Asia/Seoul"
+  spring-datasource-username: "root"

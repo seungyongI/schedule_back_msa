@@ -1,3 +1,3 @@
-userServices=70001
-calendarServices=70002
-friendServices=70003
+userService=70001
+calendarService=70002
+friendService=70003
